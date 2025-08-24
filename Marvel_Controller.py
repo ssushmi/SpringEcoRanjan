@@ -12,8 +12,8 @@ class Marvel_Controller:
 
         self.db_connection = mysql.connector.connect(
             host="localhost",
-            user="root",
-            password="Sairam@123",
+            user="DB username",
+            password="DB Password",
             database="MarvelUniver"
         )
         self.cur = self.db_connection.cursor()
@@ -72,3 +72,4 @@ class Marvel_Controller:
         self.db_connection.commit()
         print("All players are inserted into the database.")
     
+
